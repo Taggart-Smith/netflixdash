@@ -1,0 +1,26 @@
+.new-trailers {
+  display: flex;
+  flex-direction: column;
+}
+.new-trailers .trailers-card {
+  padding: 10px 0px;
+}
+.new-trailers .trailers-card .movietitle {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 120px;
+  display: flex;
+}
+.new-trailers .trailers-card .movietitle .titleofmovie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  bottom: 0px;
+  padding: 10px;
+}
+.new-trailers .trailers-card .movietitle .titleofmovie i {
+  background-color: lightgrey;
+  opacity: 20%;
+  padding: 4px 12px;
+}/*# sourceMappingURL=base.css.map */
