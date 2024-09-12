@@ -11,7 +11,7 @@
     <title>Netflix</title>
     <!-- 393D39 -->
 </head>
-<body class="bg-gray-100 flex">
+<body class="bg-gray-100 flex bg-gray-500">
     <div id="sidebar" class="bg-gray-600 text-white w-64 space-y-6 py-7 px-2 hidden md:block h-dvh">
       <a href="#" class="text-white flex items-center space-x-2 px-4">
         <span class="text-2xl font-extrabold"><img src="images/Screen_Shot_2024-09-12_at_7.34.54_AM-removebg-preview.png" alt="Netflix"></span>
@@ -46,35 +46,39 @@
                 </div>
             </div>
         </div>
-        <div class="trailers-card">
-            <div class="movietitle relative rounded-2xl" style="background-image: url('images/not-stolen.jpeg');">
-                <div class="titleofmovie absolute backdrop-blur-md rounded-b-2xl">
-                    <h2>Indiana Jones</h2> <i class="fa-solid fa-play rounded-3xl"></i>
-                </div>
-            </div>
-        </div>
       </div>
     </div>
   
     <!-- Main Content -->
-    <div class="flex-1 p-10">
-      <button id="sidebarToggle" class="md:hidden text-gray-500 focus:outline-none mb-4">
+    <div class="flex-1 px-10 py-5">
+      <button id="sidebarToggle" class="md:hidden text-white focus:outline-none mb-4">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
 
-      <div class="content-header">
+      <div class="content-header flex items-center">
         <div class="next-arrows">
             <i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-right"></i>
         </div>
-        <div class="searchbar">
-            <input type="search" name="searchbar id="searchbar">
+        <div class="searchbar flex-1">
+            <input type="search" name="searchbar" id="searchbar" placeholder="Search..." class="bg-gray-300 w-3/4 rounded-2xl px-5 py-1">
+        </div>
+        <div class="accountInfo flex items-center gap-4">
+            <i class="fa-regular fa-bell"></i>
+            <div class="accoutname flex items-center">
+                <div class="profilePic">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                Samantha G.
+                <br>
+                @Samantha
+            </div>
         </div>
       </div>
-      
-      <h1 class="text-3xl font-bold">Main Content</h1>
-      <p>This is your main content area. The sidebar is hidden on small screens but can be toggled with the button above.</p>
+      <div class="heading-card h-full" style="background-image: url(images/peaky-blinders.webp) no-repeat cover;">
+        Home Prac Text
+      </div>
     </div>
   
     <script>
@@ -84,6 +88,5 @@
         sidebar.classList.toggle('hidden');
       });
     </script>
-    
   </body>
 </html>
